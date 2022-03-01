@@ -1,0 +1,158 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  @media screen and (max-width: 500px){
+
+      header{
+        display: flex;
+        padding: 0;
+        background-color: aliceblue;
+        align-items: center;
+      }
+
+      h1{
+          font-size: 22px;
+          margin: 10px;
+      }
+
+      .ul-home{
+          display: flex;
+      }
+
+      .li-home{
+          list-style: none;
+          display: flex;
+      }
+
+      ul li {
+          display: flex;
+          margin-right: 10px;
+      }
+
+      h2{
+          font-size: 20px;
+          margin: 20px;
+      }
+
+      p{
+          margin: 20px;
+      }
+
+      h3{
+          font-size: 18px;
+          margin: 20px;
+      }
+  }
+
+  @media screen and (max-width: 900px){     
+      body{
+          font-size: large;
+      }
+
+      h1{
+          font-size: 35px;
+          display: flex;
+          margin: 15px;
+      }
+
+      header{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: aliceblue;
+      }
+
+      .ul-home{
+          width: 200px;
+          display: flex;
+          justify-content: flex-end;
+          padding:  10px;
+      }
+
+      .li-home{
+        width: 200px;
+        display: flex;
+        list-style: none;
+        align-items: flex-end;
+      }
+
+      li {
+        margin-right: 10px;
+        list-style: none;;
+      }
+
+      h2{
+        font-size: 25px;
+        margin: 20px;
+    }
+
+    p{
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    h3{
+        font-size: 22px;
+        margin: 20px;
+    }
+
+  }
+
+  @media screen and (min-width: 900px){     
+    body{
+        font-size: large;
+    }
+
+    h1{
+        font-size: 35px;
+        display: flex;
+        margin: 15px;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: aliceblue;
+    }
+
+    .ul-home{
+        width: 200px;
+        display: flex;
+        justify-content: flex-end;
+        padding:  10px;
+    }
+
+    .li-home{
+      width: 200px;
+      display: flex;
+      list-style: none;
+      align-items: flex-end;
+    }
+
+    li {
+      margin-right: 10px;
+      list-style: none;;
+    }
+
+    h2{
+      font-size: 25px;
+      margin: 20px;
+  }
+
+  p{
+      font-size: 20px;
+      margin: 20px;
+  }
+
+  h3{
+      font-size: 22px;
+      margin: 20px;
+  }
+
+}
