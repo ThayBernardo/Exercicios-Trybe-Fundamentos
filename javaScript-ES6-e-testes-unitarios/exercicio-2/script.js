@@ -15,13 +15,23 @@ realButton.addEventListener('click', () => {
 
 
 const letraX = (string) => {
-    let word = string.split(' ')
-    for(let index = 0; index.length < word.length; index += 1){
-        if(word[index] === 'x'){
+    let word = string.split(' ');
+
+    for(let index = 0; index < word.length; index += 1){
+        if(word[index] == 'x'){
             word[index] = 'teste'
         }
     } 
     return word.join(' ');
 }
 
-console.log(letraX('esta x frase'));
+console.log(letraX('esta x frase x'));
+
+//Outra forma de substituir palavra
+
+const x = (text) => {
+    let result = text.replace('x', 'show'); // Poderia utilizar /palavra | outraPalavra/gi 
+    return result;
+}
+
+console.log(x('teste x teste h'));

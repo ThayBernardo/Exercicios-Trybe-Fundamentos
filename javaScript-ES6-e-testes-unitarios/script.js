@@ -1,16 +1,3 @@
-// function testingScope(escopo) {
-//     if (escopo === true) {
-//       var ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
-//       ifScope = ifScope + ' ótimo, fui utilizada no escopo !';
-//       console.log(ifScope);
-//     } else {
-//       var elseScope = 'Não devo ser utilizada fora meu escopo (else)';
-//       console.log(elseScope);
-//     }
-//     console.log(ifScope + ' o que estou fazendo aqui ? :O'); // Se necessário esta linha pode ser removida.
-//   }
-
-//   testingScope(true);
 
   const testingScope = escopo => {
     if(escopo === true) {
@@ -73,3 +60,18 @@ console.log(fatorialNumber(5));
 
 // Crie uma função que receba uma frase e retorne qual a maior palavra.
 
+const frase = (texto) => {
+  let separar = texto.split(' ');
+  let maiorPalavra = 0;
+  let palavra = null;
+  
+  for(let index = 0; index < separar.length; index +=1){
+
+    if(maiorPalavra < separar[index].length){
+      maiorPalavra = separar[index].length;
+      palavra = separar[index];
+    } 
+  }
+  return palavra;
+}
+console.log(frase('a maior palavra de todas'));
