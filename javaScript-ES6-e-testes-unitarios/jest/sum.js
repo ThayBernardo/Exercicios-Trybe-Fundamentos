@@ -24,6 +24,63 @@ function sum(a, b) {
     return num;
   }
   
-  // implemente seus testes aqui
+  function encode(string1) {
+    let newValue = '';
+  
+    for(let i = 0; i < string1.length; i += 1){
+      if(string1[i] === 'a'){
+        newValue += '1'
+      }else if(string1[i] === 'e'){
+        newValue += '2'
+      }else if(string1[i] === 'i'){
+        newValue += '3'
+      }else if(string1[i] === 'o'){
+        newValue += '4'
+      }else if(string1[i] === 'u'){
+        newValue += '5'
+      }else{
+        newValue += string1[i]
+      }
+    } return newValue
+  }
 
-module.exports = {sum, myRemove, myFizzBuzz};
+  function decode(string2) {
+    let newValue2 = '';
+  
+    for(let i = 0; i < string2.length; i += 1){
+      if(string2[i] === '1'){
+        newValue2 += 'a'
+      }else if(string2[i] === '2'){
+        newValue2 += 'e'
+      }else if(string2[i] === '3'){
+        newValue2 += 'i'
+      }else if(string2[i] === '4'){
+        newValue2 += 'o'
+      }else if(string2[i] === '5'){
+        newValue2 += 'u'
+      }else{
+        newValue2 += string2[i]
+      }
+    } return newValue2
+    // seu código aqui
+  }
+
+
+  const techList = (array, name) => {
+    let newArray = [];
+    array.sort()
+  
+    if(array.length === 0){
+      return 'Vazio!'
+    }
+    for(let i = 0; i < array.length; i  += 1){
+      newArray.push({
+        tech: array[i],
+        name: name
+      })
+    }
+    return newArray
+    // seu código aqui
+  }
+  
+module.exports = {sum, myRemove, myFizzBuzz, encode, decode, techList};
